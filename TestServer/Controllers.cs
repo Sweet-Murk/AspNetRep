@@ -27,67 +27,6 @@ namespace TestServer.Controllers
         { }
 	}
 
-
-	public class ParkWorkerController : BaseController
-	{
-
-		public void workproccess(string proccess)
-		{
-            if (proccess == "done" || proccess == "not")
-            {
-                if (proccess == "done")
-                    Write(String.Format("You done all work"));
-                else Write(String.Format("Return back when you would done it!"));
-            }
-            else throw new Exception("You just need write only done\not");
-		}
-
-		public void Add(double [] values, string units = null)
-		{
-			double total = 0;
-			foreach (double d in values)
-				total += d;
-			Write(String.Format("Total: {0} {1}", total, units));
-		}
-
-		public void Text(string[] values, string color = "Green")
-		{
-			string result = String.Format("<p style=\"color:{0};\">", color);
-			foreach(string s in values)
-				result += s + "<br/>";
-			result += "</p>";
-			Write(result);
-		}
-
-		public void Any(object[] values, string desc = null)
-		{
-			string s = (desc ?? "") + "<ol>";
-			foreach (object obj in values)
-				s += "<li>" + obj.ToString() + "</li>";
-			Write(s + "</ol>");
-		}
-	}
-
-
-	public class ImageController : BaseController
-	{
-		public void Diagram()
-		{
-			if (image == null)
-				image = FileToByteArray(ctx.Server.MapPath("~/Routing.jpg"));
-
-			ctx.Response.ContentType = "image/jpeg";
-			ctx.Response.BinaryWrite(image);
-		}
-		private static byte[] FileToByteArray(string fileName)
-		{
-			FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read);
-			long nBytes = new FileInfo(fileName).Length;
-			return new BinaryReader(fs).ReadBytes((int)nBytes);
-		}
-
-		private byte[] image = null; 
-	}
 	public class ErrorController:BaseController
 	{
 		public void Details()

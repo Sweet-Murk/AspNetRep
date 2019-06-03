@@ -18,43 +18,23 @@ namespace TestServer
 
 		public void ProcessRequest(HttpContext ctx)
 		{
-			if (!router.InvokeAction(ctx)) // If failed to map the request to controller/action;
-				router.InvokeAction(ctx, "error", "details"); // Forward to our error handler;
+			if (!router.InvokeAction(ctx)) 
+				router.InvokeAction(ctx, "error", "details"); 
 		}
 		#endregion
 
-		/// <summary>
-		/// Default Constructor.
-		/// </summary>
 		public SimpleHandler()
 		{
 			if (router == null)
 			{
-				// Initialize routing according to the handler's re-usability:
 				router = new SimpleRouter(IsReusable);
-
-				// Adding namespaces where our controller classes reside:
-				// - add null or "", if you have controllers in the root.
-				// - also specify which assembly, if it is not this one.
 				router.AddNamespace("TestServer.Controllers");
-
-				// OPTIONAL: Setting exception handler for any action call:
 				router.OnActionException += new SimpleRouter.ActionExceptionHandler(OnActionException);
 			}
 		}
 
-		/// <summary>
-		/// Handles exceptions thrown by any action method.
-		/// </summary>
-		/// <example>
-		/// /simple/exception?msg=Ops!:)
-		/// </example>
-		/// <param name="ctx">current http context</param>
-		/// <param name="action">fully-qualified action name</param>
-		/// <param name="ex">exception that was raised</param>
 		private void OnActionException(HttpContext ctx, string action, Exception ex)
 		{
-			// Here we just write formatted exception details into the response...
 			Exception e = ex.InnerException ?? ex;
 			StackFrame frame = new StackTrace(e, true).GetFrame(0);
 

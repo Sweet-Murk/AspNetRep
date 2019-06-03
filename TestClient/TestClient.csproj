@@ -44,6 +44,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="client\js.js" />
     <Content Include="client\TestClient.js" />
     <Content Include="styles\theme\images\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
     <Content Include="styles\theme\images\ui-bg_flat_30_cccccc_40x100.png" />

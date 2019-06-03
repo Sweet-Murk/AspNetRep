@@ -16,7 +16,6 @@ $(document).ready(function () {
     $("#submit").click(function () {
         sendRequest();
     });
-
     $("#tabs").tabs();
     $("button").button();
 
@@ -38,27 +37,15 @@ $(document).ready(function () {
 });
 
 function sendRequest() {
-    /*
-    We are doing a little hack here, because in order to render dynamic images
-    into our HTML page we need to place them inside image tag...
-    */
     var value = $.trim($("#requests").val().toLowerCase());
     if (value.length < 1)
         return;
-    if (value == "image/diagram") {
-        $("#result").html("<img src='data/image/diagram'>");
-        return;
-    }
-    // End of the hack (special case).
     $.ajax({
         url: "data/" + value,
         success: function (data) {
             $("#result").html(data);
         },
         error: function (jqXHR, textStatus, errorThrown) {
-            // the following is also a hack, because for the demo we used date/*/*
-            // as a filter, and thus we do not handle multi-segment requests here,
-            // which is just a limitation for the demo.
             $("#result").html("<span style='color:Red;'>Requests must be in the form of segment1/segment2</span>");
         }
     });
@@ -77,7 +64,6 @@ function processTimer() {
     var d1 = new Date();
     var start = d1.getTime();
 
-    // We append a dummy parameter -current time to guarantee the request isn't cached;
     $.get("data/simple/time?dummy=" + start, function (data) {
         var d2 = new Date();
         var end = d2.getTime();
@@ -87,7 +73,7 @@ function processTimer() {
         $("#time").html(data);
         $("#calls").html(total);
         $("#average").html(round(delays / total));
-        setTimer((1000 / speed) - delay - 1); // loop the request;
+        setTimer((1000 / speed) - delay - 1);
     });
 }
 
