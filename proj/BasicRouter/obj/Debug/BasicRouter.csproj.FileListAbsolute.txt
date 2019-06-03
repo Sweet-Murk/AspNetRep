@@ -1,0 +1,6 @@
+C:\Users\dima\Desktop\proj\BasicRouter\bin\Debug\BasicRouter.dll
+C:\Users\dima\Desktop\proj\BasicRouter\bin\Debug\BasicRouter.pdb
+C:\Users\dima\Desktop\proj\BasicRouter\obj\Debug\BasicRouter.csprojAssemblyReference.cache
+C:\Users\dima\Desktop\proj\BasicRouter\obj\Debug\BasicRouter.csproj.CoreCompileInputs.cache
+C:\Users\dima\Desktop\proj\BasicRouter\obj\Debug\BasicRouter.dll
+C:\Users\dima\Desktop\proj\BasicRouter\obj\Debug\BasicRouter.pdb

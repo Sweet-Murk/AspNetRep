@@ -1,0 +1,11 @@
+C:\Users\dima\Desktop\proj\TestClient\bin\TestClient.dll
+C:\Users\dima\Desktop\proj\TestClient\bin\TestClient.pdb
+C:\Users\dima\Desktop\proj\TestClient\bin\TestServer.dll
+C:\Users\dima\Desktop\proj\TestClient\bin\BasicRouter.dll
+C:\Users\dima\Desktop\proj\TestClient\bin\TestServer.pdb
+C:\Users\dima\Desktop\proj\TestClient\bin\BasicRouter.pdb
+C:\Users\dima\Desktop\proj\TestClient\obj\Debug\TestClient.csprojAssemblyReference.cache
+C:\Users\dima\Desktop\proj\TestClient\obj\Debug\TestClient.csproj.CoreCompileInputs.cache
+C:\Users\dima\Desktop\proj\TestClient\obj\Debug\TestClient.csproj.CopyComplete
+C:\Users\dima\Desktop\proj\TestClient\obj\Debug\TestClient.dll
+C:\Users\dima\Desktop\proj\TestClient\obj\Debug\TestClient.pdb

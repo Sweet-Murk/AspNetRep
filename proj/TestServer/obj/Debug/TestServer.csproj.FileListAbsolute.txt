@@ -1,0 +1,9 @@
+C:\Users\dima\Desktop\proj\TestServer\bin\TestServer.dll
+C:\Users\dima\Desktop\proj\TestServer\bin\TestServer.pdb
+C:\Users\dima\Desktop\proj\TestServer\bin\BasicRouter.dll
+C:\Users\dima\Desktop\proj\TestServer\bin\BasicRouter.pdb
+C:\Users\dima\Desktop\proj\TestServer\obj\Debug\TestServer.csprojAssemblyReference.cache
+C:\Users\dima\Desktop\proj\TestServer\obj\Debug\TestServer.csproj.CoreCompileInputs.cache
+C:\Users\dima\Desktop\proj\TestServer\obj\Debug\TestServer.csproj.CopyComplete
+C:\Users\dima\Desktop\proj\TestServer\obj\Debug\TestServer.dll
+C:\Users\dima\Desktop\proj\TestServer\obj\Debug\TestServer.pdb

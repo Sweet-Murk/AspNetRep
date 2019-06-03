@@ -1,0 +1,53 @@
+﻿<html>
+<head>
+		<title>Test</title>
+		<link href="styles/theme/theme.css" rel="stylesheet" type="text/css" />
+		<link href="styles/styles.css" rel="stylesheet" type="text/css" />
+		<script src="scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+		<script src="scripts/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+		<script src="scripts/jquery-ui-1.8.20.custom.min.js" type="text/javascript"></script>
+		<script src="scripts/TestClient.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Park Owner Requests</a></li>
+            <li><a href="#tabs-2">Park Worker Requests</a></li>
+        </ul>
+        <div id="tabs-1">
+            <p class="ui-widget">
+                <label for="worker">Name: </label>
+                <input id="worker style=" width:200px;"" />
+                <br />
+                <br />
+                <label for="work">Set Work: </label>
+                <input id="work" />
+                <br />
+                <br />
+                <label for="requests">Query: </label>
+                <input id="requests" type="text" value="" style="width:400px;" />
+
+
+                <button id="submit">Submit</button>
+            </p>
+        </div>
+
+        <div id="tabs-2">
+            <p class="ui-widget">
+                <label for="workproccess">Done\Not: </label>
+                <input id="workproccess style=" width:200px;"" />
+                <br />
+                <br />
+                <label for="requests">Query: </label>
+                <input id="requests" style="width:400px;" />
+                <button id="submit">Submit</button>
+            </p>
+
+            <div id="result" style="height:400px;border:1px solid Grey;overflow:auto;background-color:White;"></div>
+        </div>
+    </div>
+
+</body>
+</html>
