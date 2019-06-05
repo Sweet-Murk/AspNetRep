@@ -1,4 +1,6 @@
 # AspNetRep
+Lab 1.
+Java servlets in Asp.Net (httphandlers+routing)
  How to start: 
  1) open the project
  2) compile
