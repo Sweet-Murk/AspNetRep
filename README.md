@@ -1,7 +1,8 @@
 # AspNetRep
 Lab 1.
 Java servlets in Asp.Net (httphandlers+routing)
- How to start: 
+
+How to start: 
  1) open the project
  2) compile
  3) enter the name of the worker and set him a work
